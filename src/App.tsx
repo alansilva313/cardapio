@@ -37,7 +37,8 @@ function App() {
       
 
         {api.map((item, index) => (
-          <div key={index} className="w-full flex justify-between border py-2 px-2 rounded">
+          <div>
+            <div key={index} className="w-full flex justify-between  py-2 px-2 ">
           <div>
             <h3>{item.title}</h3>
             <p>{item.ingredients}</p>
@@ -51,14 +52,16 @@ function App() {
           <div className="w-[90px]  border rounded overflow-hidden">
             <img src="" alt="imagem" />
           </div>
+          
         </div>
+
+          
+          <hr />
+          </div>
         ))
 
         }
         
-
-
-
       </div>
 
    
