@@ -50,7 +50,7 @@ function App() {
             })}</p>
           </div>
 
-          <div className="w-[120px] max-h-[80px]  border rounded overflow-hidden">
+          <div className="max-w-[120px] max-h-[80px]  border rounded overflow-hidden">
             <img src={image} alt="imagem" className="object-cover"/>
           </div>
           
