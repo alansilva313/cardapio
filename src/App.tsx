@@ -1,4 +1,5 @@
 import { api } from "./services/api"
+import image from "./assets/fdimage.jpg";
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
 
         {api.map((item, index) => (
           <div>
-            <div key={index} className="w-full flex justify-between  py-2 px-2 ">
+            <div key={index} className="w-full flex justify-between py-2 px-2 gap-2 ">
           <div>
             <h3>{item.title}</h3>
             <p>{item.ingredients}</p>
@@ -49,8 +50,8 @@ function App() {
             })}</p>
           </div>
 
-          <div className="w-[90px]  border rounded overflow-hidden">
-            <img src="" alt="imagem" />
+          <div className="w-[120px] max-h-[80px]  border rounded overflow-hidden">
+            <img src={image} alt="imagem" className="object-cover"/>
           </div>
           
         </div>
