@@ -8,95 +8,17 @@ export const api = [
         price: 39.90,
         category: "Hambúrgueres"
     },
-    {
-        id: 2,
-        title: "Pizza Marguerita",
-        description: "Pizza clássica com queijo, tomate e manjericão",
-        image: "",
-        ingredients: "massa, molho de tomate, queijo, tomate, manjericão",
-        price: 49.90,
-        category: "Pizzas"
-    },
-    {
-        id: 3,
-        title: "Salada Caesar",
-        description: "Salada leve e crocante com molho especial",
-        image: "",
-        ingredients: "alface, croutons, parmesão, frango, molho Caesar",
-        price: 29.90,
-        category: "Saladas"
-    },
-    {
-        id: 4,
-        title: "Sushi Combo",
-        description: "10 peças de sushi fresquinho",
-        image: "",
-        ingredients: "arroz, salmão, nori, cream cheese, cebolinha",
-        price: 59.90,
-        category: "Sushi"
-    },
-    {
-        id: 5,
-        title: "Batata Frita Supreme",
-        description: "Porção generosa de batatas fritas com queijo e bacon",
-        image: "",
-        ingredients: "batata, queijo cheddar, bacon, cebolinha",
-        price: 24.90,
-        category: "Aperitivos"
-    },
-    {
-        id: 6,
-        title: "Espaguete à Carbonara",
-        description: "Macarrão com molho cremoso e pedaços de bacon",
-        image: "",
-        ingredients: "espaguete, creme de leite, bacon, parmesão, ovo",
-        price: 34.90,
-        category: "Massas"
-    },
-    {
-        id: 7,
-        title: "Churrasco Completo",
-        description: "Porção de churrasco com acompanhamentos",
-        image: "",
-        ingredients: "carne bovina, linguiça, farofa, arroz, vinagrete",
-        price: 79.90,
-        category: "Carnes"
-    },
-    {
-        id: 8,
-        title: "Taco Mexicano",
-        description: "Taco recheado com carne e vegetais frescos",
-        image: "",
-        ingredients: "tortilla, carne moída, alface, tomate, queijo, molho picante",
-        price: 19.90,
-        category: "Comida Mexicana"
-    },
-    {
-        id: 9,
-        title: "Milkshake de Chocolate",
-        description: "Bebida gelada e cremosa com sabor intenso de chocolate",
-        image: "",
-        ingredients: "leite, sorvete de chocolate, calda de chocolate, chantilly",
-        price: 14.90,
-        category: "Bebidas"
-    },
-    {
-        id: 10,
-        title: "Bolo Red Velvet",
-        description: "Bolo macio com cobertura de cream cheese",
-        image: "",
-        ingredients: "farinha, açúcar, cacau, cream cheese, corante vermelho",
-        price: 44.90,
-        category: "Sobremesas"
-    },
 
     {
-        id: 11,
-        title: "Bolo Red Velvet",
-        description: "Bolo macio com cobertura de cream cheese",
+        id: 2,
+        title: "Hamburger 500",
+        description: "Hamburger caseiro delicioso",
         image: "",
-        ingredients: "farinha, açúcar, cacau, cream cheese, corante vermelho",
-        price: 44.90,
-        category: "Sobremesas"
-    }
+        ingredients: "hamburger, salsicha, alface, picles, milho, azeitona",
+        price: 39.90,
+        category: "Hambúrgueres"
+    },
+  
+  
+   
 ];
