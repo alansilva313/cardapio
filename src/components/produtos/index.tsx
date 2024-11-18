@@ -4,10 +4,11 @@ import DetalhesProdutos from "../detalhesprodutos";
 
 export default function Produtos() {
   const [produtosPorCategoria, setProdutosPorCategoria] = useState<{ [key: string]: any[] }>({});
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<any | void>(false);
+  const [produtoSelecionado, setProdutoSelecionado] = useState<any | void>(null);
 
   useEffect(() => {
-    // Exemplo de dados fictícios no lugar do API real.
+    // Simula a resposta da API para organizar os produtos por categoria
     const itensPorCategoria: any = api.reduce((ac: { [key: string]: any[] }, item: any) => {
       if (!ac[item.category]) {
         ac[item.category] = [];
@@ -19,8 +20,14 @@ export default function Produtos() {
     setProdutosPorCategoria(itensPorCategoria);
   }, []);
 
-  const openModalDetalhes = () => {
+  const openModalDetalhes = (produto: any) => {
+    setProdutoSelecionado(produto);
     setOpen(true);
+  };
+
+  const closeModalDetalhes = () => {
+    setProdutoSelecionado(null);
+    setOpen(false);
   };
 
   return (
@@ -28,13 +35,12 @@ export default function Produtos() {
       {Object.entries(produtosPorCategoria).map(([categoria, produtos], index) => (
         <div key={index} className="mb-6">
           <h2 className="font-bold capitalize mb-4">{categoria}</h2>
-          <DetalhesProdutos open={open} setOpen={setOpen} />
           <div className="flex flex-col gap-4">
             {produtos.map((produto) => (
               <div
                 key={produto.id}
                 className="w-full flex justify-between items-center border-b pb-4 cursor-pointer"
-                onClick={openModalDetalhes}
+                onClick={() => openModalDetalhes(produto)}
               >
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">{produto.title}</h3>
@@ -58,6 +64,22 @@ export default function Produtos() {
           </div>
         </div>
       ))}
+
+      {/* Drawer renderizado fora do loop */}
+      {produtoSelecionado && (
+        <DetalhesProdutos open={open} setOpen={closeModalDetalhes}>
+          <div>
+            <h3>{produtoSelecionado.title}</h3>
+            <p>{produtoSelecionado.ingredients}</p>
+            <p>
+              {produtoSelecionado.price.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+              })}
+            </p>
+          </div>
+        </DetalhesProdutos>
+      )}
     </div>
   );
 }

@@ -8,10 +8,12 @@ import {
     DrawerTitle,
   } from "@/components/ui/drawer";
   import { Button } from "../ui/button";
+import { ReactNode } from "react";
   
   interface DetalhesProdutosProps {
-    open: boolean;
+    open: boolean | any;
     setOpen: (open: boolean) => void;
+    children?: ReactNode
   }
   
   export default function DetalhesProdutos({ open, setOpen }: DetalhesProdutosProps) {
@@ -22,10 +24,6 @@ import {
             <DrawerTitle>PRODUTO</DrawerTitle>
             <DrawerDescription>hamburger novo</DrawerDescription>
           </DrawerHeader>
-
-
-
-
 
 
 
