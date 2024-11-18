@@ -1,6 +1,7 @@
 import { api } from "@/services/api";
 import { useEffect, useState } from "react";
 import DetalhesProdutos from "../detalhesprodutos";
+import hmbteste from "@/assets/hmbteste.jpg";
 
 export default function Produtos() {
   const [produtosPorCategoria, setProdutosPorCategoria] = useState<{ [key: string]: any[] }>({});
@@ -55,7 +56,7 @@ export default function Produtos() {
                 </div>
                 <div className="w-[100px] h-[80px] border rounded overflow-hidden">
                   <img
-                    src={produto.image || "/default.jpg"}
+                    src={hmbteste || "/default.jpg"}
                     alt={produto.title}
                     className="object-cover w-full h-full"
                   />

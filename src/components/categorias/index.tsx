@@ -25,7 +25,7 @@ export default function Categorias() {
 
   return (
     <div
-      className={`flex w-full p-2 gap-2 overflow-auto bg-white top-0 fixed transition-transform duration-300 ${
+      className={`flex z-10 w-full p-2 gap-2 overflow-auto bg-white top-0 fixed transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
