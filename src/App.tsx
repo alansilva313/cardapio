@@ -1,4 +1,5 @@
 
+import Categorias from "./components/categorias";
 import Produtos from "./components/produtos";
 
 function App() {
@@ -20,18 +21,7 @@ function App() {
       </div>
 
         
-    <div className="w-full mt-10 p-2 flex gap-2 overflow-auto">
-       <div>
-         hamburger
-       </div>
-       <div>
-         combo
-       </div>
-
-       <div>
-         bebidas
-       </div>
-    </div>
+     <Categorias />
 
       <div className="mt-12 p-2 flex flex-col gap-2 h-screen">
   

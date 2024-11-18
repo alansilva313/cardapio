@@ -18,6 +18,16 @@ export const api = [
         price: 39.90,
         category: "Hambúrgueres"
     },
+
+    {
+        id: 3,
+        title: "Coca-Cola 2LTRS",
+        description: "Hamburger caseiro delicioso",
+        image: "",
+        ingredients: "hamburger, salsicha, alface, picles, milho, azeitona",
+        price: 39.90,
+        category: "Bebidas"
+    },
   
   
    
