@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import hbcapa from "@/assets/capa_hb.jpg";
-import { Info } from "lucide-react";
+
 
 export default function Capa() {
     return (
