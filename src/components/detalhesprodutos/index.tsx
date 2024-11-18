@@ -29,7 +29,7 @@ import { ReactNode } from "react";
 
 
           <DrawerFooter>
-            <Button className="bg-slate-600" onClick={() => setOpen(false)}>Continuar</Button>
+            <Button className="bg-orange-500" onClick={() => setOpen(false)}>Continuar</Button>
             <DrawerClose>
          
             </DrawerClose>

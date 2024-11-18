@@ -10,7 +10,7 @@ export default function Categorias() {
   }, []);
 
   return (
-    <div className="w-full mt-10 p-2 flex gap-2 overflow-auto">
+    <div className={`hidden w-full mt-14 p-2  gap-2 overflow-auto bg-red-300`}>
       {categoriasUnicas.map((categoria, index) => (
         <div key={index} className="">
           {categoria}
