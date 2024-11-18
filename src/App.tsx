@@ -17,8 +17,24 @@ function App() {
             <AvatarImage src="https://github.com/shadcn.png" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
+
+          
         </div>
+      <div>
+        
       </div>
+        
+      </div>
+
+     <div className="p-2 absolute">
+     <p className="text-white shadow-xl">seg - sab - 18:00</p>
+     </div>
+
+      <div className="w-full flex items-center justify-center z-10 mt-8 bg-white p-2 flex-col  rounded">
+      <h3 className="text-[18px] font-bold text-slate-400">Hamburgeria</h3>
+       
+      </div>
+
 
   
       <Categorias />
