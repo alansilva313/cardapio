@@ -1,17 +1,26 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import hbcapa from "@/assets/capa_hb.jpg";
+import { Forward, Heart } from "lucide-react";
 
 
 export default function Capa() {
     return (
-        <div className="w-full ">
+        <div className="w-full">
+            
           
             <div
                 className="w-full h-[180px] border bg-cover bg-center"
                 style={{
                     backgroundImage: `url(${hbcapa})`,
                 }}
-            ></div>
+            >
+                <div className="w-full flex items-end justify-end px-7 pt-2 gap-4">
+                    <Heart className="text-white cursor-pointer " color="red"/>
+                    <p className="text-white cursor-pointer"><Forward /></p>
+                </div>
+
+
+            </div>
 
             <div className="w-full flex items-center justify-center">
                 <div className="w-[90%] flex items-center justify-center mt-2 border rounded flex-col relative">

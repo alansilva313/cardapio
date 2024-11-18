@@ -6,7 +6,15 @@ export const api = [
         image: "",
         ingredients: "hamburger, salsicha, alface, picles, milho, azeitona",
         price: 39.90,
-        category: "Hambúrgueres"
+        category: "Hambúrgueres",
+        adicionais: [
+            {
+                id: 1,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
+            }
+        ]
     },
 
     {
@@ -16,7 +24,15 @@ export const api = [
         image: "",
         ingredients: "hamburger, salsicha, alface, picles, milho, azeitona",
         price: 39.90,
-        category: "Hambúrgueres"
+        category: "Hambúrgueres",
+        adicionais: [
+            {
+                id: 1,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
+            }
+        ]
     },
 
     {
@@ -26,7 +42,15 @@ export const api = [
         image: "",
         ingredients: "hamburger, salsicha, alface, picles, milho, azeitona",
         price: 39.90,
-        category: "Bebidas"
+        category: "Bebidas",
+        adicionais: [
+            {
+                id: 1,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
+            }
+        ]
     },
 
     {
@@ -36,7 +60,15 @@ export const api = [
         image: "",
         ingredients: "hamburger, salsicha, alface, picles, milho, azeitona",
         price: 24.90,
-        category: "Combos"
+        category: "Combos",
+        adicionais: [
+            {
+                id: 1,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
+            }
+        ]
     },
   
   

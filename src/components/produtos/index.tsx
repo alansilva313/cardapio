@@ -35,7 +35,7 @@ export default function Produtos() {
     <div className="p-2">
       {Object.entries(produtosPorCategoria).map(([categoria, produtos], index) => (
         <div key={index} className="mb-6">
-          <h2 className="font-bold capitalize mb-4">{categoria}</h2>
+          <h2 className="font-bold capitalize mb-4 bg-slate-100 p-1">{categoria}</h2>
           <div className="flex flex-col gap-4">
             {produtos.map((produto) => (
               <div
