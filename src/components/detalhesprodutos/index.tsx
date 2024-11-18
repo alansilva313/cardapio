@@ -16,18 +16,24 @@ import {
   
   export default function DetalhesProdutos({ open, setOpen }: DetalhesProdutosProps) {
     return (
-      <Drawer open={open} onOpenChange={setOpen}>
-        <DrawerContent>
+      <Drawer open={open} onOpenChange={setOpen} >
+        <DrawerContent className="h-[90%]" >
           <DrawerHeader>
             <DrawerTitle>PRODUTO</DrawerTitle>
-            <DrawerDescription>This action cannot be undone.</DrawerDescription>
+            <DrawerDescription>hamburger novo</DrawerDescription>
           </DrawerHeader>
+
+
+
+
+
+
+
+
           <DrawerFooter>
-            <Button onClick={() => setOpen(false)}>Submit</Button>
+            <Button className="bg-slate-600" onClick={() => setOpen(false)}>Continuar</Button>
             <DrawerClose>
-              <Button variant="outline" onClick={() => setOpen(false)}>
-                Cancel
-              </Button>
+         
             </DrawerClose>
           </DrawerFooter>
         </DrawerContent>
