@@ -31,7 +31,7 @@ export default function Produtos() {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-2">
       {Object.entries(produtosPorCategoria).map(([categoria, produtos], index) => (
         <div key={index} className="mb-6">
           <h2 className="font-bold capitalize mb-4">{categoria}</h2>
