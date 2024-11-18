@@ -36,6 +36,26 @@ import { ReactNode } from "react";
             }
            </div>
 
+
+           <div>
+            <p>adicionais</p>
+             
+             <div className="w-full flex justify-between mt-2">
+
+              <div>
+                <p>hamburger</p>
+                <p>R$ 7,00</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <img src="" alt="img" />
+                <input type="radio" />
+              </div>
+              
+             </div>
+
+             <hr />
+           </div>
+
            
 
            <div className="flex flex-col gap-2">
