@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="w-full h-screen flex flex-col">
       
-    
+      <Categorias />
 
       <Capa />
 
   
-      <Categorias />
+   
 
  
       <div className="mt-16 p-2 flex flex-col">
