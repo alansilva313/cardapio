@@ -43,13 +43,14 @@ export default function Produtos() {
                 onClick={() => openModalDetalhes(produto)}
               >
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800">{produto.title}</h3>
+                  <h3 className="font-semibold text-gray-800">{produto.title}</h3>
                   <p className="text-sm text-gray-600">{produto.ingredients}</p>
-                  <p className="text-md font-bold mt-2">
-                    {produto.price.toLocaleString("pt-BR", {
+                  <p className="text-md  mt-2">
+                    
+                    <p>{produto.price.toLocaleString("pt-BR", {
                       style: "currency",
                       currency: "BRL",
-                    })}
+                    })}</p>
                   </p>
                 </div>
                 <div className="w-[100px] h-[80px] border rounded overflow-hidden">

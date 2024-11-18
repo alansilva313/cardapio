@@ -15,7 +15,7 @@ function App() {
       <Categorias />
 
  
-      <div className="mt-16 p-4 flex flex-col gap-4 overflow-y-auto">
+      <div className="mt-16 p-2 flex flex-col">
         <Produtos />
       </div>
     </div>
