@@ -67,9 +67,9 @@ export default function Produtos() {
         </div>
       ))}
 
-      {/* Drawer renderizado fora do loop */}
+      
       {produtoSelecionado && (
-        <DetalhesProdutos open={open} setOpen={closeModalDetalhes}>
+        <DetalhesProdutos open={open} data={produtoSelecionado} setOpen={closeModalDetalhes}>
           <div>
             <h3>{produtoSelecionado.title}</h3>
             <p>{produtoSelecionado.ingredients}</p>

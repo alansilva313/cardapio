@@ -5,7 +5,7 @@ import hbcapa from "@/assets/capa_hb.jpg";
 export default function Capa() {
     return (
         <div className="w-full ">
-            {/* Capa com imagem */}
+          
             <div
                 className="w-full h-[180px] border bg-cover bg-center"
                 style={{
@@ -13,7 +13,6 @@ export default function Capa() {
                 }}
             ></div>
 
-            {/* Avatar e informações */}
             <div className="w-full flex items-center justify-center">
                 <div className="w-[90%] flex items-center justify-center mt-2 border rounded flex-col relative">
                     <Avatar className="bottom-8 w-[75px] h-[75px]">
