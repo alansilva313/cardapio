@@ -1,7 +1,8 @@
-import { api } from "./services/api"
-import image from "./assets/fdimage.jpg";
+
+import Produtos from "./components/produtos";
 
 function App() {
+
 
 
   return (
@@ -37,31 +38,7 @@ function App() {
 
       
 
-        {api.map((item, index) => (
-          <div>
-            <div key={index} className="w-full flex justify-between py-2 px-2 gap-2 ">
-          <div>
-            <h3>{item.title}</h3>
-            <p>{item.ingredients}</p>
-            <p className="font-bold mt-2">{item.price.toLocaleString("pt-BR", {
-              style: "currency",
-              currency: "BRL"
-
-            })}</p>
-          </div>
-
-          <div className="max-w-[120px] max-h-[80px]  border rounded overflow-hidden">
-            <img src={image} alt="imagem" className="object-cover"/>
-          </div>
-          
-        </div>
-
-          
-          <hr />
-          </div>
-        ))
-
-        }
+       <Produtos />
         
       </div>
 
