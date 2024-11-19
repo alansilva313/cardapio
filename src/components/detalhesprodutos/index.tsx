@@ -84,7 +84,7 @@ import Cart from "../cart";
 
 
 
-          <DrawerFooter>
+          <DrawerFooter className="w-full fixed bottom-0">
           
            <Cart item={data}/>
           </DrawerFooter>
