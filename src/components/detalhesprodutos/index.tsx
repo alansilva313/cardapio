@@ -19,6 +19,8 @@ import { ReactNode } from "react";
 import Cart from "../cart";
 
   export default function DetalhesProdutos({ open, setOpen, data }: DetalhesProdutosProps) {
+
+    console.log(data.adicionais)
     return (
       <Drawer open={open} onOpenChange={setOpen} >
         <DrawerContent className="h-[90%] flex flex-col" >
@@ -41,33 +43,27 @@ import Cart from "../cart";
            <div>
             <p>adicionais</p>
              
+
+           {data.adicionais.map((item: any) => (
              <div className="w-full flex justify-between mt-2">
 
-              <div>
-                <p>hamburger</p>
-                <p>R$ 7,00</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <img src="" alt="img" />
-                <input type="checkbox" />
-              </div>
-              
+             <div>
+               <p>{item.title}</p>
+               <p>{item.price.toLocaleString("pt-BR",  {
+                  style: "currency",
+                  currency: "BRL",
+
+               })}</p>
+             </div>
+             <div className="flex items-center gap-2">
+               <img src="" alt="img" />
+               <input type="checkbox" />
              </div>
 
-             <hr />
-
-             <div className="w-full flex justify-between mt-2">
-
-              <div>
-                <p>hamburger</p>
-                <p>R$ 7,00</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <img src="" alt="img" />
-                <input type="checkbox" />
-              </div>
-              
              </div>
+           ))
+
+           }
 
              <hr />
            </div>
