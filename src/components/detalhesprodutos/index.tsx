@@ -6,6 +6,7 @@ import {
  
     DrawerTitle,
   } from "@/components/ui/drawer";
+  import hmbteste from "@/assets/hmbteste.jpg";
 
 import { ReactNode } from "react";
   
@@ -20,7 +21,7 @@ import Cart from "../cart";
 
   export default function DetalhesProdutos({ open, setOpen, data }: DetalhesProdutosProps) {
 
-    console.log(data.adicionais)
+
     return (
       <Drawer open={open} onOpenChange={setOpen} >
         <DrawerContent className="h-[90%] flex flex-col" >
@@ -40,7 +41,7 @@ import Cart from "../cart";
            </div>
 
 
-           <div>
+           <div className="h-[400px] overflow-auto">
             <p>adicionais</p>
              
 
@@ -56,7 +57,7 @@ import Cart from "../cart";
                })}</p>
              </div>
              <div className="flex items-center gap-2">
-               <img src="" alt="img" />
+               <img src={hmbteste} alt="img" className="w-[55px] rounded"/>
                <input type="checkbox" />
              </div>
 

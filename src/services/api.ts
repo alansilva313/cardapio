@@ -13,6 +13,53 @@ export const api = [
                 title: "hamburger",
                 description: "hamburger 200",
                 price: 7.00
+            },
+
+            {
+                id: 2,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
+            },
+
+            {
+                id: 3,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
+            },
+            {
+                id: 4,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
+            },
+
+            {
+                id: 5,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
+            },
+            {
+                id: 6,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
+            },
+
+            {
+                id: 7,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
+            },
+
+            {
+                id: 8,
+                title: "hamburger",
+                description: "hamburger 200",
+                price: 7.00
             }
         ]
     },
