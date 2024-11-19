@@ -27,7 +27,7 @@ import Cart from "../cart";
         <DrawerContent className="h-[90%] flex flex-col" >
          
 
-          <div className="p-2 flex flex-col mt-10">
+          <div className="p-2 flex flex-col mt-10 h-full overflow-auto pb-20">
            <div  className="flex flex-col gap-2">
            <DrawerTitle>{data.title}</DrawerTitle>
            <DrawerDescription>{data.ingredients}</DrawerDescription>
@@ -41,7 +41,7 @@ import Cart from "../cart";
            </div>
 
 
-           <div className="h-[400px] overflow-auto">
+           <div >
             <p>adicionais</p>
              
 
