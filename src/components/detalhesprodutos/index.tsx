@@ -16,6 +16,7 @@ import { ReactNode } from "react";
     data: any
   }
   import { Textarea } from "@/components/ui/textarea"
+import Cart from "../cart";
 
   export default function DetalhesProdutos({ open, setOpen, data }: DetalhesProdutosProps) {
     return (
@@ -88,7 +89,7 @@ import { ReactNode } from "react";
 
           <DrawerFooter>
           
-      
+           <Cart item={data}/>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

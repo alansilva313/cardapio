@@ -33,7 +33,7 @@ export default function Capa() {
                         <h3 className="font-bold">Hamburgeria top bom</h3>
                     </div>
 
-                    <div className="top-11 w-full border flex items-center justify-center bg-slate-950 text-white p-2 rounded">
+                    <div className="top-11 w-full border flex items-center justify-center bg-slate-950/40 text-white p-2 rounded">
                         <h3>aberto - seg a sáb</h3>
            
                     </div>
