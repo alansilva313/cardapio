@@ -4,6 +4,7 @@ import { createContext, ReactNode, useState } from "react";
 interface CartContextType {
   cart: any[]; 
   addItem: (item: any) => void; 
+  clearCard: any
 }
 
 
@@ -20,8 +21,13 @@ export function CartProvider({ children }: CartProviderProps) {
     setCart((prevCart) => [...prevCart, item]);
   };
 
+
+  const clearCard = () => {
+
+  }
+ 
   return (
-    <CartContext.Provider value={{ cart, addItem }}>
+    <CartContext.Provider value={{ cart, addItem, clearCard }}>
       {children}
     </CartContext.Provider>
   );
