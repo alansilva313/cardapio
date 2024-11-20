@@ -24,7 +24,7 @@ export default function Cart({ item }: any) {
             </button>
             <input 
                 type="number"
-                className="border  text-center flex items-center justify-center"
+                className="border w-20  text-center flex items-center justify-center"
                 value={value}
                 readOnly
             />
