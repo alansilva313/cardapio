@@ -41,13 +41,25 @@ import Cart from "../cart";
            </div>
 
 
-           <div >
-            <p>adicionais</p>
+           <div>
+            
+
+           
+           {data.adicionais.length > 0 && (
+            <div>
+              <p className="font-bold">adicionais</p>
+              <hr />
+            </div>
+           )}
              
 
-           {data.adicionais.map((item: any) => (
+           {data.adicionais &&
+          
+            
+           
+           data.adicionais.map((item: any) => (
              <div className="w-full flex justify-between mt-2">
-
+          
              <div>
                <p>{item.title}</p>
                <p>{item.price.toLocaleString("pt-BR",  {
