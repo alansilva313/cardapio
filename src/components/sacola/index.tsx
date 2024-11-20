@@ -3,7 +3,6 @@
 
 import {
     Drawer,
-    DrawerClose,
     DrawerContent,
     DrawerDescription,
     DrawerFooter,
@@ -11,7 +10,7 @@ import {
     DrawerTitle,
     DrawerTrigger,
   } from "@/components/ui/drawer"
-import { Button } from "../ui/button"
+
   
 
 
@@ -28,16 +27,26 @@ export default function Sacola(){
 
           <Drawer>
             <DrawerTrigger className="bg-red-700 p-2 rounded text-white">Ver sacola</DrawerTrigger>
-            <DrawerContent>
+            <DrawerContent className="h-[90%]">
                 <DrawerHeader>
-                <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-                <DrawerDescription>This action cannot be undone.</DrawerDescription>
+                <DrawerTitle>
+                    <div className="flex items-center justify-between">
+                        <div>
+                            fechar
+                        </div>
+                        <div>
+                            sacola
+                        </div>
+
+                        <div>
+                            limpar
+                        </div>
+                    </div>
+                </DrawerTitle>
+                <DrawerDescription></DrawerDescription>
                 </DrawerHeader>
                 <DrawerFooter>
-                <Button>Submit</Button>
-                <DrawerClose>
-                    <Button variant="outline">Cancel</Button>
-                </DrawerClose>
+              
                 </DrawerFooter>
             </DrawerContent>
             </Drawer>
