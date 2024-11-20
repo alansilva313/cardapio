@@ -1,6 +1,7 @@
 import Capa from "./components/capa";
 import Categorias from "./components/categorias";
 import Produtos from "./components/produtos";
+import Sacola from "./components/sacola";
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <div className="mt-16 p-2 flex flex-col">
         <Produtos />
       </div>
+
+      <Sacola />
     </div>
   );
 }
