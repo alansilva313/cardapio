@@ -1,26 +1,21 @@
-import Capa from "./components/capa";
-import Categorias from "./components/categorias";
-import Produtos from "./components/produtos";
-import Sacola from "./components/sacola";
+import Header from "./components/header";
+import Importar from "./components/importar";
+import Individual from "./components/individual";
+
 
 
 function App() {
   return (
-    <div className="w-full h-screen flex flex-col">
-      
-      <Categorias />
+    <div className="w-full h-screen">
+      <Header />
 
-      <Capa />
+      <div className="px-8 py-4 w-full border mt-4 flex items-center gap-4">
+        <Individual />
 
-  
+        <Importar />
+      </div>
    
 
- 
-      <div className="mt-16 p-2 flex flex-col">
-        <Produtos />
-      </div>
-
-      <Sacola />
     </div>
   );
 }
